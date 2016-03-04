@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/circle_progress_dimen"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <zs.com.lbt.customerview.ProgressCircular
+            android:layout_width="@dimen/circle_progress_dimen"
+            android:layout_height="@dimen/circle_progress_dimen"
+            app:matProg_barColor="@color/app_main"
+            app:matProg_progressIndeterminate="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:text="@string/loading"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loading_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loading_failed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/app_margin"
+            android:text="@string/loading_failed"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_name"/>
+
+        <Button
+            android:background="@color/app_bg"
+            android:id="@+id/btn_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/app_margin"
+            android:text="@string/reload"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loading_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_no_chat_history"/>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:layout_marginTop="@dimen/app_margin"
+            android:text="数据现在空空的"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_btn"/>
+    </LinearLayout>
+
+</merge>

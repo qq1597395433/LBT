@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GeryToolBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/bar_grey</item>
+    </style>
+    <style name="Toolbar_TextAppearance_black">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/bar_black</item>
+    </style>
+</resources>

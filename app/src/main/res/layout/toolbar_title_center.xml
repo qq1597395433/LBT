@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bar_height"
+    android:background="@android:color/white"
+    android:minHeight="@dimen/bar_height"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    app:theme="@style/GeryToolBar"
+    app:titleTextAppearance="@style/Toolbar_TextAppearance_black">
+    <ImageButton
+        android:id="@+id/iv_home"
+        android:layout_gravity="left"
+        android:background="@android:color/transparent"
+        android:layout_width="@dimen/bar_height"
+        android:layout_height="@dimen/bar_height"
+        android:src="@drawable/ic_left_grey_24dp"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</android.support.v7.widget.Toolbar>

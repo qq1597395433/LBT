@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseThemeCompat">
+    </style>
+    <style name="OtherTheme" parent="AppBaseThemeCompat">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppThemeAnimStyle" parent="AppBaseThemeCompat">
+        <item name="android:windowAnimationStyle">@style/AnimActivity</item>
+    </style>
+    <!--，第一个表示新的activity创建进入效果，第2个表示activity还没有finish()下退出效果，第3个表示上一个activity返回进入效果，第4个表示的是activity finish()之后退出效果...-->
+    <style name="AnimActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseExitAnimation">@anim/back_exit</item>
+    </style>
+
+
+    <style name="AppBaseThemeCompat" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/app_Accent</item>
+        <!--选中状态icon的颜色和字体颜色-->
+        <item name="colorPrimary">@color/app_Accent</item>
+        <!--正常状态下字体颜色和icon颜色-->
+        <item name="android:textColorPrimary">@color/font_value</item>
+        <item name="colorPrimaryDark">@color/app_main</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/tab_max_width</item>
+        <item name="tabIndicatorColor">@android:color/holo_blue_bright</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/app_Accent</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+</resources>
